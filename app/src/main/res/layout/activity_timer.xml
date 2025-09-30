@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/bg"
+    android:padding="24dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txtRemaining"
+        android:text="01:00"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:textSize="56sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="4">
+
+        <!-- Pause -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnPause"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            android:text="@string/pause"
+
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:minWidth="0dp"
+            android:paddingHorizontal="6dp"
+
+            app:autoSizeTextType="uniform"
+            app:autoSizeMinTextSize="12sp"
+            app:autoSizeMaxTextSize="16sp"
+            app:autoSizeStepGranularity="1sp"
+
+            app:backgroundTint="@color/btn_primary_bg"
+            android:textColor="@color/btn_primary_text" />
+
+        <!-- Resume (começa desabilitado) -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnResume"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            android:text="@string/resume"
+            android:enabled="false"
+
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:minWidth="0dp"
+            android:paddingHorizontal="6dp"
+
+            app:autoSizeTextType="uniform"
+            app:autoSizeMinTextSize="12sp"
+            app:autoSizeMaxTextSize="16sp"
+            app:autoSizeStepGranularity="1sp"
+
+            app:backgroundTint="@color/btn_primary_bg"
+            android:textColor="@color/btn_primary_text" />
+
+        <!-- Reset -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnReset"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            android:text="@string/reset"
+
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:minWidth="0dp"
+            android:paddingHorizontal="6dp"
+
+            app:autoSizeTextType="uniform"
+            app:autoSizeMinTextSize="12sp"
+            app:autoSizeMaxTextSize="16sp"
+            app:autoSizeStepGranularity="1sp"
+
+            app:backgroundTint="@color/btn_primary_bg"
+            android:textColor="@color/btn_primary_text" />
+
+        <!-- Stop -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnStop"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="@string/stop"
+
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:minWidth="0dp"
+            android:paddingHorizontal="6dp"
+
+            app:autoSizeTextType="uniform"
+            app:autoSizeMinTextSize="12sp"
+            app:autoSizeMaxTextSize="16sp"
+            app:autoSizeStepGranularity="1sp"
+
+            app:backgroundTint="@color/btn_primary_bg"
+            android:textColor="@color/btn_primary_text" />
+    </LinearLayout>
+
+</LinearLayout>

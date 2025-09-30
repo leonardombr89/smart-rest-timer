@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Smart Rest Timer</string>
+
+    <!-- Presets -->
+    <string name="label_presets">Quick presets</string>
+    <string name="sub_presets">Choose a ready time with one tap</string>
+    <string name="cd_preset_45">Start 45 seconds preset</string>
+    <string name="cd_preset_60">Start 60 seconds preset</string>
+    <string name="cd_preset_90">Start 90 seconds preset</string>
+
+    <!-- Divider -->
+    <string name="or">OR</string>
+
+    <!-- Custom -->
+    <string name="label_custom">Custom time</string>
+    <string name="sub_custom">Type the exact number of seconds you want</string>
+    <string name="custom_seconds">Custom (seconds)</string>
+    <string name="helper_custom_seconds">Example: 75 for 1m15s</string>
+    <string name="start_custom">Start custom</string>
+    <string name="cd_custom_seconds">Enter custom time in seconds</string>
+    <string name="cd_start_custom">Start the timer with the custom time</string>
+
+    <!-- Timer / Others -->
+    <string name="start">Start</string>
+    <string name="pause">Pause</string>
+    <string name="resume">Resume</string>
+    <string name="reset">Reset</string>
+    <string name="stop">Stop</string>
+    <string name="done">Done!</string>
+    <string name="completed_today">Completed today: %1$d</string>
+
+    <!-- Errors -->
+    <string name="error_seconds_gt_zero">Enter seconds &gt; 0</string>
+</resources>

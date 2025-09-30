@@ -1,0 +1,23 @@
+# Gradle
+.gradle/
+**/build/
+local.properties
+
+# IDE
+.idea/
+*.iml
+
+# Keystore / Assinatura
+*.jks
+*.keystore
+keystore.properties
+
+# Bundles/APKs
+*.apk
+*.aab
+app/release/
+app/debug/
+
+# Misc
+captures/
+.DS_Store

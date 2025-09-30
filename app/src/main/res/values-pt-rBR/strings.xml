@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Smart Rest Timer</string>
+
+    <!-- Presets -->
+    <string name="label_presets">Presets rápidos</string>
+    <string name="sub_presets">Escolha um tempo pronto com um toque</string>
+    <string name="cd_preset_45">Começar preset de 45 segundos</string>
+    <string name="cd_preset_60">Começar preset de 60 segundos</string>
+    <string name="cd_preset_90">Começar preset de 90 segundos</string>
+
+    <!-- Divider -->
+    <string name="or">OU</string>
+
+    <!-- Custom -->
+    <string name="label_custom">Tempo personalizado</string>
+    <string name="sub_custom">Digite o número exato de segundos</string>
+    <string name="custom_seconds">Personalizado (segundos)</string>
+    <string name="helper_custom_seconds">Exemplo: 75 para 1m15s</string>
+    <string name="start_custom">Iniciar personalizado</string>
+    <string name="cd_custom_seconds">Digite o tempo em segundos</string>
+    <string name="cd_start_custom">Iniciar</string>
+
+    <!-- Timer / Others -->
+    <string name="start">Iniciar</string>
+    <string name="pause">Pausar</string>
+    <string name="resume">Retomar</string>
+    <string name="reset">Reiniciar</string>
+    <string name="stop">Parar</string>
+    <string name="done">Concluído!</string>
+    <string name="completed_today">Concluídos hoje: %1$d</string>
+
+    <!-- Errors -->
+    <string name="error_seconds_gt_zero">Digite segundos &gt; 0</string>
+</resources>

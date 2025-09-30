@@ -1,0 +1,31 @@
+<manifest xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:label="Smart Rest Timer"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:theme="@style/Theme.SmartRestTimer"
+        android:localeConfig="@xml/locales_config"
+        tools:targetApi="33">
+
+
+        <!-- Sem intent-filter, não é lançável por outras apps -->
+        <activity
+            android:name="com.thinksoft.smartresttimer.TimerActivity"
+            android:exported="false" />
+
+        <!-- Activity de launcher: precisa exported=true -->
+        <activity
+            android:name="com.thinksoft.smartresttimer.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
+</manifest>

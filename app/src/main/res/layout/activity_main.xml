@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Container central -->
+    <LinearLayout
+        android:id="@+id/centerContainer"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="20dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:minWidth="280dp"
+        android:maxWidth="420dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Seção 1: PRESETS -->
+        <TextView
+            android:id="@+id/labelPresets"
+            android:text="@string/label_presets"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/subPresets"
+            android:text="@string/sub_presets"
+            android:textColor="@android:color/white"
+            android:alpha="0.75"
+            android:textSize="13sp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- Linha dos 3 presets -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:weightSum="3"
+            android:layout_marginBottom="16dp"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn45"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:text="45s"
+                android:contentDescription="@string/cd_preset_45" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn60"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:text="60s"
+                android:contentDescription="@string/cd_preset_60" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn90"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:text="90s"
+                android:contentDescription="@string/cd_preset_90" />
+        </LinearLayout>
+
+        <!-- Divisor com "OU" no meio -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="12dp"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="#33FFFFFF" />
+
+            <TextView
+                android:text="@string/or"
+                android:textColor="@android:color/white"
+                android:alpha="0.65"
+                android:textSize="12sp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="#33FFFFFF" />
+        </LinearLayout>
+
+        <!-- Seção 2: CUSTOM -->
+        <TextView
+            android:id="@+id/labelCustom"
+            android:text="@string/label_custom"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/subCustom"
+            android:text="@string/sub_custom"
+            android:textColor="@android:color/white"
+            android:alpha="0.75"
+            android:textSize="13sp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- Campo custom + botão Start -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="96dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:hint="@string/custom_seconds"
+                app:boxBackgroundMode="outline"
+                app:boxStrokeColor="@color/primary"
+                app:helperText="@string/helper_custom_seconds">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtCustom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:importantForAutofill="no"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="#80FFFFFF" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnStartCustom"
+                android:layout_width="0dp"
+                android:layout_height="63dp"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+
+                android:text="@string/start_custom"
+                android:textAllCaps="false"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:minWidth="0dp"
+                android:paddingHorizontal="6dp"
+
+                app:autoSizeTextType="uniform"
+                app:autoSizeMinTextSize="10sp"
+                app:autoSizeMaxTextSize="16sp"
+                app:autoSizeStepGranularity="1sp"
+
+                android:textColor="@color/btn_primary_text"
+                app:backgroundTint="@color/btn_primary_bg"
+                app:cornerRadius="12dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtStats"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:alpha="0.85"
+            android:layout_marginTop="24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

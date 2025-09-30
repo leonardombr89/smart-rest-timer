@@ -1,0 +1,5 @@
+<resources>
+    <color name="primary">#007BFF</color>
+    <color name="onPrimary">#FFFFFF</color>
+    <color name="bg">#111318</color>
+</resources>
